@@ -1,0 +1,36 @@
+$btnColor:#d10157;
+.categories
+{
+	width:70%;
+	margin:5% auto;
+	box-shadow:0 10px 10px silver;	
+	display: flex;
+}
+*
+{
+	font-weight: normal;
+}
+.categories .left
+{
+	width: 48%;
+	padding: 1%;
+}
+.categories .right
+{
+	width: 48%;
+	padding: 1%;	
+	text-align: center;
+}
+.categories img
+{
+	width: 100%;
+}
+.categories.active
+{
+	flex-flow: row-reverse;	
+}
+.categories button
+{
+	background: $btnColor;
+	color:white;	
+}

@@ -1,0 +1,21 @@
+create database ramu;
+
+use ramu;
+
+create table users(
+	id int auto_increment primary key,
+	firstname varchar(500),
+	lastname varchar(500),
+	email varchar(500),
+	phone varchar(500),
+	password varchar(500),
+	dt timestamp
+);	
+
+create table cart(
+	cid int auto_increment primary key,
+	uid int,
+	pid varchar(500),
+	qty int,
+	added_on timestamp
+);	

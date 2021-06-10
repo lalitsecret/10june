@@ -1,0 +1,1 @@
+json-server data.json --port 4000 --watch

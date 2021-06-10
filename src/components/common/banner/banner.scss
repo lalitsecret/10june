@@ -1,0 +1,67 @@
+$btnColor:#d10157;
+.slider-container
+{
+	padding: 5vw;
+	position:relative;
+}
+
+.slider-container .indicators
+{
+	position:absolute;
+	top:50%;
+	left:0;
+	width:100%;
+
+}
+.slider-container .indicators .prev
+{
+	left:5%;
+	top:0;
+	position:absolute;
+	background:black;
+	color:white;
+	padding:10px 50px;
+	opacity:0.5;
+}
+.slider-container .indicators .next
+{
+	opacity:0.5;
+	background:black;
+	padding:10px 50px;
+	color:white;
+	
+	right:5%;
+	top:0;
+	position:absolute;
+}
+
+.slider-container .indicators:hover .next,
+.slider-container .indicators:hover .next
+{
+	opacity:1;
+	cursor:pointer;
+}
+
+
+.slider-container img
+{
+	width: 100%;
+}
+.slider-container .controls
+{
+	padding: 10px;
+	text-align: center;
+}
+
+.slider-container .controls button
+{
+	width: 30px;
+	height: 5px;
+	padding: 0;
+	margin:10px;
+}
+.slider-container .controls button:focus,
+.slider-container .controls button:hover
+{
+	background: $btnColor;
+}

@@ -1,0 +1,124 @@
+$btnColor:#d10157;
+main
+{
+	height: 80vh;
+	overflow: auto;
+	display: flex;
+}
+main .left
+{
+	width: 25%;
+	background: #e9e9e9;
+}
+main .left span
+{
+	display: none;
+}
+main .left p
+{
+	padding: 10px;
+	border-bottom: 1px solid silver;
+}
+main .right
+{
+	width: 75%;
+	display: flex;
+	flex-flow: wrap;
+	align-items: center;
+}
+main .right .item
+{
+	position: relative;
+	width: 21%;
+	padding: 1%;
+	margin:1%;
+	display: inline-table;
+	box-shadow: 0 0 5px silver;
+	height: 400px;
+}
+main .right .item img
+{
+	width: 100%;
+}
+main .right .item h3
+{
+	margin:0;
+	font-weight: bold;
+}
+main .right .item .buy
+{
+	position: absolute;
+	bottom:0;
+	left:0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+main .right .item .buy button
+{
+	background: $btnColor;
+	color:white;
+}
+main .right .item .desc
+{
+	padding: 5px;
+	background: #e9e9e9;
+}
+
+
+@media (max-width: 900px)
+{	
+	main .right  .item
+	{
+		width: 45%;
+	}
+
+}
+
+@media (max-width: 500px)
+{	
+	main
+	{
+		flex-flow: column;
+	}
+	main .left
+	{
+		width: 100%;
+		background: $btnColor ;
+	}
+	main .left p
+	{
+		border-color: white;
+		color:white;
+	}
+	main .right
+	{
+		width: 100%;
+	}
+	main .right  .item
+	{
+		width: auto;
+		position: static;
+		height: auto;
+	}
+	main .right  .item .buy
+	{
+		position: static;
+		top:auto;
+		left:auto;
+		bottom:auto;
+		right:auto;
+	}
+	main .left p
+	{
+		/*float: left;*/
+	}	
+	main .left span
+	{
+		float: right;
+		display: block;
+		color:white;
+		padding: 20px;
+	}
+}

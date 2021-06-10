@@ -1,0 +1,116 @@
+$btnColor:#d10157;
+.cart-box
+{
+	position: fixed;
+	bottom:0;
+	right:0;	
+	width:40vw;
+	transition: 0.3s;
+	background: white;
+	box-shadow:0 0 10px black;
+	transform: translateX(100%);
+}
+.cart-box.active
+{
+	transform: translateX(0%);
+}
+.cart .header
+{
+	background: black;
+	padding: 10px;
+	color:white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.cart .body
+{
+	background: white;
+	padding: 10px;
+}
+.cart .body .scroll
+{
+	max-height: 50vh;
+	overflow: auto;
+}
+.cart .body .scroll .line
+{
+	margin-bottom: 10px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+.cart .body .scroll .line .left
+{
+	display: flex;
+	align-items: center;
+	width: 70%;
+	margin-right: 5%;
+}
+.cart .body .scroll .line .left .image
+{
+	padding: 5px;
+}
+.cart .body .scroll .line .left .desc
+{
+
+}
+
+.cart .body .scroll .line .left .desc .actions
+{
+	display: flex;
+	margin-top: 10px;
+	align-items: center;
+	justify-content: space-between;
+}
+.cart .body .scroll .line .right
+{	
+	width: 20%;
+}
+
+.cart .body .note
+{
+	background: #f1f1f1;
+	padding: 10px;
+	display: flex;
+}
+.cart .body .note img
+{
+	margin-right: 10px;
+}
+.cart .footer
+{
+	padding: 10px;
+}
+.cart .footer small
+{
+
+}
+.cart .footer .btn
+{
+	background: $btnColor;
+	padding: 10px;
+	color:white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+
+.cart-box .noitems
+{
+	padding: 5%;
+}
+.cart-box .noitems 
+{
+	text-align: center;
+}
+.cart-box .noitems h3
+{
+	font-weight: bold;
+}
+.cart-box .noitems p
+{
+	margin:0;
+}
